@@ -14,12 +14,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/react": "^17.0.20",
     "concurrently": "^6.2.1",
     "config": "^3.3.6",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "install": "^0.13.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.0.4"
+    "mongoose": "^6.0.4",
+    "npm": "^7.23.0",
+    "react-transition-group": "^1.2.1",
+    "webpack": "^4.44.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"

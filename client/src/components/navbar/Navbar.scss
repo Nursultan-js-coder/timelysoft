@@ -1,0 +1,62 @@
+@import "../../styles/colors";
+.app {
+  &__navbar {
+    width: 100vw;
+    margin-top: 100px;
+    border-top: 1px solid $text-gray;
+    padding: 10px;
+  }
+  &__nav {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    .nav__collapse {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+      .nav {
+        &__item {
+          display: flex;
+          height: 100%;
+          align-items: center;
+          justify-content: center;
+          font-size: 25px;
+          color: #fff;
+          position: relative;
+          .dropdown {
+            margin: 0;
+            padding: 20px 0;
+            background-color: #fff;
+            color: $text-gray-2;
+            position: absolute;
+            top: 100px;
+            min-width: 200px;
+            transition: all 1s ease-in;
+            border-radius: 7px;
+            &__item {
+              display: flex;
+              text-decoration: none;
+              color: inherit;
+              padding: 0 10px;
+              &:hover {
+                background-color: rgb(247, 245, 245);
+              }
+              width: 100%;
+              & > * {
+                margin: 8px;
+              }
+            }
+          }
+          img {
+            margin-top: -12px;
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}

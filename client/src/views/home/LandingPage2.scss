@@ -1,0 +1,29 @@
+.landing-page-2 {
+  grid-template-columns: 2fr 1fr;
+  //   margin-top: 200px;
+  height: 100vh;
+  align-items: center;
+  //   background-color: ivory;
+}
+.home-page {
+  &__content {
+    display: flex;
+    // align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    h2 {
+      font-size: 38px;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 19px;
+      color: #cac9cc;
+      margin-bottom: 2rem;
+    }
+  }
+}
+img {
+  svg {
+    display: none;
+  }
+}

@@ -1,16 +1,12 @@
+import { item } from "./item";
 import axios from "axios";
+const BASE_URL = "http://localhost:9000/api";
 
-// const base_url = process.env.REACT_APP_BASE_URL;
-const base_url = "http://localhost:1337";
-const request = axios.create({
-  baseURL: base_url,
+export const request = axios.create({
+  baseURL: BASE_URL,
   responseType: "json",
 });
 
-const homePage = {
-  get: () => request.get("/homepage"),
-};
-
-export const apiClient = {
-  homePage,
+export const clientAPI = {
+  item,
 };

@@ -1,0 +1,8 @@
+.single-post {
+  padding: 10px 0;
+  margin: 10px 0;
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+}
+/*# sourceMappingURL=posts.css.map */
